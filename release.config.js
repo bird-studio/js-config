@@ -1,6 +1,4 @@
-"use strict";
-
-const { commitConfig } = require("./lib/commit.config");
+const { commitConfig } = require("./lib");
 
 module.exports = {
   branches: ["main"],

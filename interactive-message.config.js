@@ -1,6 +1,5 @@
-"use strict";
+const { commitConfig } = require("./lib");
 
-const { commitConfig } = require("./lib/commit.config");
 const { plugin } = require("@bird-studio/interactive-message");
 
 const notSelected = { description: "_NotSelected_", value: "" };
