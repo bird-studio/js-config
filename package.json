@@ -14,7 +14,7 @@
   "repository": "bird-studio/js-config",
   "license": "MIT",
   "author": "akira-toriyama",
-  "main": "lib/opt/index.js",
+  "main": "lib/index.js",
   "files": [
     "/lib",
     "README.md"
