@@ -1,6 +1,6 @@
 "use strict";
 
-const { appConfig } = require("./lib/commit.config");
+const { commitConfig } = require("./lib/commit.config");
 
 module.exports = {
   branches: ["main"],
@@ -9,7 +9,7 @@ module.exports = {
       "@semantic-release/commit-analyzer",
       {
         preset: "conventionalcommits",
-        releaseRules: appConfig.map((v) => ({
+        releaseRules: commitConfig.map((v) => ({
           type: v.value,
           release: v.release,
         })),
@@ -20,7 +20,7 @@ module.exports = {
       {
         preset: "conventionalcommits",
         presetConfig: {
-          types: appConfig.map((v) => ({
+          types: commitConfig.map((v) => ({
             type: v.value,
             section: v.value,
             hidden: false,
