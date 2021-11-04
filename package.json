@@ -17,6 +17,7 @@
   "main": "lib/index.js",
   "files": [
     "/lib",
+    "/json",
     "README.md"
   ],
   "scripts": {
