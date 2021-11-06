@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    // 厳し目の設定 anyをエラーにしたりなど
+    "strict": true,
+
+    // 型ファイルのインポートは、import type を必須にする
+    "importsNotUsedAsValues": "error",
+
+    // return を統一
+    "noImplicitReturns": true,
+
+    // switch を厳し目に
+    "noFallthroughCasesInSwitch": true,
+
+    // オブジェクトのプロパティへのアクセスが厳密
+    "noUncheckedIndexedAccess": true,
+
+    // 大文字小文字を厳密に
+    "forceConsistentCasingInFileNames": true
+  }
+}
