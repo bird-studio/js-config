@@ -28,9 +28,6 @@ npm i -D \
   @semantic-release/git \
   @semantic-release/npm \
   conventional-changelog-conventionalcommits \
-  # @bird-studio
-  @bird-studio/interactive-message \
-  @bird-studio/js-config \
   # jest
   jest \
   ts-jest \
