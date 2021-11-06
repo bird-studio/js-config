@@ -13,6 +13,14 @@
   </a>
 </p>
 
+## Usage
+
+```bash
+yarn add -D @bird-studio/js-config
+```
+
+## Recommended
+
 ```bash
 yarn add -D \
   # semantic-release
