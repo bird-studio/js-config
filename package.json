@@ -41,12 +41,6 @@
     "@semantic-release/npm": "8.0.2",
     "conventional-changelog-conventionalcommits": "4.6.1"
   },
-  "peerDependencies": {
-    "semantic-release": "18.0.0",
-    "@semantic-release/git": "10.0.1",
-    "@semantic-release/npm": "8.0.2",
-    "conventional-changelog-conventionalcommits": "4.6.1"
-  },
   "publishConfig": {
     "access": "public"
   }
