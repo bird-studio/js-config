@@ -14,8 +14,13 @@
 </p>
 
 ```bash
-yarn add -D semantic-release \
+yarn add -D \
+  # semantic-release
+  semantic-release \
   @semantic-release/git \
   @semantic-release/npm \
-  conventional-changelog-conventionalcommits
+  conventional-changelog-conventionalcommits \
+  # @bird-studio
+  @bird-studio/interactive-message \
+  @bird-studio/js-config
 ```
