@@ -22,5 +22,9 @@ yarn add -D \
   conventional-changelog-conventionalcommits \
   # @bird-studio
   @bird-studio/interactive-message \
-  @bird-studio/js-config
+  @bird-studio/js-config \
+  # jest
+  jest \
+  ts-jest \
+  @types/jest
 ```
