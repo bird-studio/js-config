@@ -18,3 +18,45 @@
 ```bash
 npm i -D @bird-studio/js-config
 ```
+
+```js
+// babel.config.js;
+
+/** @type {import('@babel/core').TransformOptions} */
+module.exports = require("@bird-studio/js-config").babelConfig;
+```
+
+```js
+// jest.config.js
+
+/** @type {import('@jest/types/build/Config').InitialOptions} */
+module.exports = require("@bird-studio/js-config").jestConfig.nextJs;
+
+/** @type {import('@jest/types/build/Config').InitialOptions} */
+module.exports = require("@bird-studio/js-config").jestConfig.node;
+```
+
+```js
+// next.config.js
+
+/** @type {import('next').NextConfig} */
+module.exports = require("@bird-studio/js-config").nextConfig;
+```
+
+```json
+// tsconfig.json
+
+{
+  "extends": "@bird-studio/js-config/tsConfig/tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "lib",
+    "baseUrl": "src",
+    "paths": {
+      "~/*": ["./*"]
+    }
+
+    // ....
+  }
+}
+```
