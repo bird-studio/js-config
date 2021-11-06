@@ -16,13 +16,13 @@
 ## Usage
 
 ```bash
-yarn add -D @bird-studio/js-config
+npm i -D @bird-studio/js-config
 ```
 
 ## Recommended
 
 ```bash
-yarn add -D \
+npm i -D \
   # semantic-release
   semantic-release \
   @semantic-release/git \
