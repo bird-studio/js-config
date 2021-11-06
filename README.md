@@ -25,8 +25,9 @@ npm i -D @bird-studio/js-config
 npm i -D \
   # semantic-release
   semantic-release \
+  @semantic-release/github \
   @semantic-release/git \
-  @semantic-release/npm \
+  @semantic-release/npm \ # for npm
   conventional-changelog-conventionalcommits \
   # jest
   jest \
