@@ -38,8 +38,7 @@ module.exports = {
 
 {{body}}
 
-Close #{{issue}}
-BREAKING CHANGE: {{breakingChange}}`,
+Close #{{issue}}`,
   questionDictionary: [
     {
       name: "type",
@@ -79,14 +78,7 @@ BREAKING CHANGE: {{breakingChange}}`,
        */
       getChoices: fetchMyIssues,
       overwriteAnswer: (ans) => (ans ? ans : ""),
-      overwriteTpl: (tpl) => tpl.replace(/Close #\r?\n/, "").trim(),
-    },
-    {
-      name: "breakingChange",
-      type: "input",
-      message: "Please input the breakingChange.",
-      overwriteAnswer: (ans) => (ans ? ans : ""),
-      overwriteTpl: (tpl) => tpl.replace(/BREAKING CHANGE: $/, "").trim(),
+      overwriteTpl: (tpl) => tpl.replace(/Close #$/, "").trim(),
     },
   ],
   config: {
