@@ -70,7 +70,7 @@ module.exports = {
        */
       getChoices: fetchMyIssues,
       overwriteAnswer: (ans) => (ans ? ans : ""),
-      overwriteTpl: (tpl) => tpl.replace(/ Close #\r?\n/, "").trim(),
+      overwriteTpl: (tpl) => tpl.replace(/ Close #\r?\n/, "\r\n").trim(),
     },
     {
       name: "body",
