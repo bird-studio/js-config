@@ -34,11 +34,9 @@ const fetchMyIssues = () =>
  * @type {import('interactive-message').Setting}
  */
 module.exports = {
-  template: `{{type}}: {{gitmoji}} {{description}}
+  template: `{{type}}: {{gitmoji}} {{subject}} Close #{{issue}}
 
-{{body}}
-
-Close #{{issue}}`,
+{{body}}`,
   questionDictionary: [
     {
       name: "type",
@@ -59,15 +57,9 @@ Close #{{issue}}`,
       getChoices: () => gitmoji,
     },
     {
-      name: "description",
+      name: "subject",
       type: "input",
-      message: "Please input the description.",
-    },
-    {
-      name: "body",
-      type: "input",
-      message: "Please input the body.",
-      overwriteTpl: (tpl) => tpl.replace(/\r?\n{2,}/, "\r\n\r\n").trim(),
+      message: "Please input the subject.",
     },
     {
       name: "issue",
@@ -78,7 +70,13 @@ Close #{{issue}}`,
        */
       getChoices: fetchMyIssues,
       overwriteAnswer: (ans) => (ans ? ans : ""),
-      overwriteTpl: (tpl) => tpl.replace(/Close #$/, "").trim(),
+      overwriteTpl: (tpl) => tpl.replace(/ Close #\r?\n/, "").trim(),
+    },
+    {
+      name: "body",
+      type: "input",
+      message: "Please input the body.",
+      overwriteTpl: (tpl) => tpl.replace(/\r?\n{2,}/, "\r\n\r\n").trim(),
     },
   ],
   config: {
