@@ -3002,7 +3002,7 @@ hook-std@^2.0.0:
   resolved "https://registry.yarnpkg.com/hook-std/-/hook-std-2.0.0.tgz#ff9aafdebb6a989a354f729bb6445cf4a3a7077c"
   integrity sha512-zZ6T5WcuBMIUVh49iPQS9t977t7C0l7OtHrpeMb5uk48JdflRX0NSFvCekfYNmGQETnLq9W/isMyHl69kxGi8g==
 
-hosted-git-info@*:
+hosted-git-info@*, hosted-git-info@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-5.0.0.tgz#df7a06678b4ebd722139786303db80fdf302ea56"
   integrity sha512-rRnjWu0Bxj+nIfUOkz0695C0H6tRrN5iYIzYejb0tDEefe2AekHu/U5Kn9pEie5vsJqpNQU02az7TGSH3qpz4Q==
@@ -3014,7 +3014,7 @@ hosted-git-info@^2.1.4:
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.9.tgz#dffc0bf9a21c02209090f2aa69429e1414daf3f9"
   integrity sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==
 
-hosted-git-info@^4.0.0, hosted-git-info@^4.0.1, hosted-git-info@^4.1.0:
+hosted-git-info@^4.0.0, hosted-git-info@^4.0.1:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-4.1.0.tgz#827b82867e9ff1c8d0c4d9d53880397d2c86d224"
   integrity sha512-kyCuEOWjJqZuDbRHzL8V93NzQhwIB71oFWSyzVo+KPZI+pnQPPxucdkrOZvkLRnrf5URsQM+IJ09Dw29cRALIA==
@@ -4218,11 +4218,11 @@ npm-normalize-package-bin@^1.0.0, npm-normalize-package-bin@^1.0.1:
   integrity sha512-EPfafl6JL5/rU+ot6P3gRSCpPDW5VmIzX959Ob1+ySFUuuYHWHekXpwdUZcKP5C+DS4GEtdJluwBjnsNDl+fSA==
 
 npm-package-arg@*, npm-package-arg@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/npm-package-arg/-/npm-package-arg-9.0.0.tgz#955a5e4735298fc23f71cb72da3574daa134340c"
-  integrity sha512-yhzXxeor+Zfhe5MGwPdDumz6HtNlj2pMekWB95IX3CC6uDNgde0oPKHDCLDPoJqQfd0HqAWt+y4Hs5m7CK1+9Q==
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/npm-package-arg/-/npm-package-arg-9.0.1.tgz#db9c6379c45d79db88ee6dd40d3ec6a9d9a4d13a"
+  integrity sha512-Xs9wznfEAmZAR61qsYH3iN24V/qMYYkvAR5CRQNMvC6PjN2fHtO8y9XP/xdp5K+Icx+u1wMBMgWRPCmAEChSog==
   dependencies:
-    hosted-git-info "^4.1.0"
+    hosted-git-info "^5.0.0"
     semver "^7.3.5"
     validate-npm-package-name "^3.0.0"
 
