@@ -3669,9 +3669,9 @@ levn@^0.4.1:
     type-check "~0.4.0"
 
 libnpmaccess@^6.0.2:
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/libnpmaccess/-/libnpmaccess-6.0.2.tgz#a694908ce7ee923ac2c2c2ca4ac457d52ce61b8f"
-  integrity sha512-/o/Kdio2IO0RJq8D+1K18FlNzt8CxF5hNDCQdPivMUcQyf3sCSZiS1Z86wDXlrmRtUvmsr31SK46vmPx66zaKQ==
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/libnpmaccess/-/libnpmaccess-6.0.3.tgz#473cc3e4aadb2bc713419d92e45d23b070d8cded"
+  integrity sha512-4tkfUZprwvih2VUZYMozL7EMKgQ5q9VW2NtRyxWtQWlkLTAWHRklcAvBN49CVqEkhUw7vTX2fNgB5LzgUucgYg==
   dependencies:
     aproba "^2.0.0"
     minipass "^3.1.1"
@@ -3734,9 +3734,9 @@ libnpmorg@^4.0.2:
     npm-registry-fetch "^13.0.0"
 
 libnpmpack@^4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/libnpmpack/-/libnpmpack-4.0.2.tgz#da12a656a3516b90171b09086498dc3b9063fe5c"
-  integrity sha512-BeRDo3isvb7g4n2aOIytEUlJg6CPTKSRuH+6GYue/CyRMXGGl6sqUWIy6Fj8fcXKAIoR2QEWOkSM5HzTWV8Liw==
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/libnpmpack/-/libnpmpack-4.0.3.tgz#0de60120a2456524b0cdb25bac58f454a1441c2e"
+  integrity sha512-/H4XXJp5S74palJfVhM5za/4dw8/1DRfU5g+t2taAojjr5+cSKyEoxxnHOnSRWu7zqqMeT8e4jX6Cz8lNUsbAw==
   dependencies:
     "@npmcli/run-script" "^3.0.0"
     npm-package-arg "^9.0.1"
@@ -3754,9 +3754,9 @@ libnpmpublish@^6.0.2:
     ssri "^9.0.0"
 
 libnpmsearch@^5.0.2:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/libnpmsearch/-/libnpmsearch-5.0.2.tgz#e44bdd47a3dc85f0daab76d73235e42eb808f3fb"
-  integrity sha512-lx3qLm+vOQzdYFGfL2tNldQVN08EatkvpOLRghsWQ47Y+jINFvDe3s5unsMLLF89CfQFqdaYLJ992yQLCwDbtQ==
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/libnpmsearch/-/libnpmsearch-5.0.3.tgz#ed502a4c2c70ea36723180455fae1357546b2184"
+  integrity sha512-Ofq76qKAPhxbiyzPf/5LPjJln26VTKwU9hIU0ACxQ6tNtBJ1CHmI7iITrdp7vNezhZc0FlkXwrIpqXjhBJZgLQ==
   dependencies:
     npm-registry-fetch "^13.0.0"
 
@@ -3889,15 +3889,10 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
-lru-cache@^7.4.0, lru-cache@^7.5.1, lru-cache@^7.7.1:
-  version "7.8.0"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.8.0.tgz#649aaeb294a56297b5cbc5d70f198dcc5ebe5747"
-  integrity sha512-AmXqneQZL3KZMIgBpaPTeI6pfwh+xQ2vutMsyqOu1TBdEXFZgpG/80wuJ531w2ZN7TI0/oc8CPxzh/DKQudZqg==
-
-lru-cache@^7.4.4:
-  version "7.7.3"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.7.3.tgz#98cd19eef89ce6a4a3c4502c17c833888677c252"
-  integrity sha512-WY9wjJNQt9+PZilnLbuFKM+SwDull9+6IAguOrarOMoOHTcJ9GnXSO11+Gw6c7xtDkBkthR57OZMtZKYr+1CEw==
+lru-cache@^7.4.0, lru-cache@^7.4.4, lru-cache@^7.5.1, lru-cache@^7.7.1:
+  version "7.8.1"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.8.1.tgz#68ee3f4807a57d2ba185b7fd90827d5c21ce82bb"
+  integrity sha512-E1v547OCgJvbvevfjgK9sNKIVXO96NnsTsFPBlg4ZxjhsJSODoH9lk8Bm0OxvHNm6Vm5Yqkl/1fErDxhYL8Skg==
 
 lru-queue@^0.1.0:
   version "0.1.0"
