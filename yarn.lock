@@ -2811,13 +2811,13 @@ flatted@^3.1.0:
   integrity sha512-WIWGi2L3DyTUvUrwRKgGi9TwxQMUEqPOPQBVi71R96jZXJdFskXEmf54BoZaS1kknGODoIGASGEzBUYdyMCBJg==
 
 focus-trap-react@^8.9.0:
-  version "8.11.1"
-  resolved "https://registry.yarnpkg.com/focus-trap-react/-/focus-trap-react-8.11.1.tgz#dabda599f6834b8f55368494525167fa0128007c"
-  integrity sha512-ZFElB120Ntdxnq0aSWnzQqQ5QY1XUt8T1yuud/BIYAriMTWvyQghsk558ASSSV0iflaUgFQNRjKq3IEFEjGQGA==
+  version "8.11.2"
+  resolved "https://registry.yarnpkg.com/focus-trap-react/-/focus-trap-react-8.11.2.tgz#92c6dc65bc96cbc14660a5f4b3bd434b61c1960b"
+  integrity sha512-+LQSE2vfe/2d23ddg+f2bm2IietBkarVUGw0jkswAU4btUxihHvWOrUC5QfNAqv5MLgfhGRs/rr0rU2IaxzM4w==
   dependencies:
-    focus-trap "^6.9.1"
+    focus-trap "^6.9.3"
 
-focus-trap@^6.9.1:
+focus-trap@^6.9.3:
   version "6.9.3"
   resolved "https://registry.yarnpkg.com/focus-trap/-/focus-trap-6.9.3.tgz#2b9fae5b86c051a374f437e5ce171833efac0515"
   integrity sha512-sUXiHx0QbF8SQMZGdxpu8V8zPcXx0BkU6Fj7t14csEknkcH1pnxorhhh1PfSaGjJj6gj3yiBRPxBV/qoHege3w==
