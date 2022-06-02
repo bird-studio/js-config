@@ -1025,9 +1025,9 @@
     fastq "^1.6.0"
 
 "@npmcli/arborist@^5.0.0", "@npmcli/arborist@^5.0.4":
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/@npmcli/arborist/-/arborist-5.2.0.tgz#ee40dfe1f81ae1524819ee39c8f3e7022b0d6269"
-  integrity sha512-zWV7scFGL0SmpvfQyIWnMFbU/0YgtMNyvJiJwR98kyjUSntJGWFFR0O600d5W+TrDcTg0GyDbY+HdzGEg+GXLg==
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/@npmcli/arborist/-/arborist-5.2.1.tgz#4f38187cb694946f551a825df17e6efd565b8946"
+  integrity sha512-DNyTHov3lU7PtCGHABzrPqQOUiBdiYzZ5dLv3D0RD5I9KbmhTLcZI/rv3ddZY0K9vpDE/R+R48b+cU/dUkL0Tw==
   dependencies:
     "@isaacs/string-locale-compare" "^1.1.0"
     "@npmcli/installed-package-contents" "^1.0.7"
@@ -2289,7 +2289,7 @@ debug@4, debug@^4.0.0, debug@^4.1.0, debug@^4.1.1, debug@^4.3.2, debug@^4.3.3:
 debuglog@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/debuglog/-/debuglog-1.0.1.tgz#aa24ffb9ac3df9a2351837cfb2d279360cd78492"
-  integrity sha1-qiT/uaw9+aI1GDfPstJ5NgzXhJI=
+  integrity sha512-syBZ+rnAK3EgMsH2aYEOLUW7mZSY9Gb+0wUMCFsZvcmiz+HigA0LOcq/HoQqVuGG+EKykunc7QG2bzrponfaSw==
 
 decamelize-keys@^1.1.0:
   version "1.1.0"
@@ -3788,9 +3788,9 @@ libnpmdiff@^4.0.2:
     tar "^6.1.0"
 
 libnpmexec@^4.0.2:
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/libnpmexec/-/libnpmexec-4.0.5.tgz#e488a1f47805b8d9af3c216ff4a5ea9c51111013"
-  integrity sha512-ykTsaAz0AV5mPr2HqmI6GCtQ5b6/OTJnnuXxZa78fJVMIGqJMfm4lAQZpBNNyH68Fs0oDIGZbnWaB5PfzyzSJg==
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/libnpmexec/-/libnpmexec-4.0.6.tgz#600beffd6f265cf92a096a7f336f330bc0019e82"
+  integrity sha512-v1jAPJyFFex6R0YHYXuudR4liQ3tYJ7vVZ6eThOex4+WzQEnoShLVfK3MLyFbjdGNO85wCHcVWVpXaBOVnVa/w==
   dependencies:
     "@npmcli/arborist" "^5.0.0"
     "@npmcli/ci-detect" "^2.0.0"
@@ -5006,7 +5006,7 @@ promise-call-limit@^1.0.1:
 promise-inflight@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
-  integrity sha1-mEcocL8igTL8vdhoEputEsPAKeM=
+  integrity sha512-6zWPyEOFaQBJYcGMHBKTKJ3u6TBsnMFOIZSa6ce1e/ZrrsOlnHRHbabMjLiBYKp+n44X9eUI6VUPaukCXHuG4g==
 
 promise-retry@^2.0.1:
   version "2.0.1"
