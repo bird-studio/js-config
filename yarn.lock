@@ -23,10 +23,10 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@bird-studio/interactive-message@3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@bird-studio/interactive-message/-/interactive-message-3.0.0.tgz#21c633d7966420a716b45c9508c1881219cd84a5"
-  integrity sha512-v3qW+f91a8bC0WDI4a7T/obKxZ0WC+wGQln+nCwklwu/Au+K8sxhcpXXSrdZg1b5zx6EAR04psCgUv6zUPIaDw==
+"@bird-studio/interactive-message@3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@bird-studio/interactive-message/-/interactive-message-3.0.1.tgz#7ef21b54fe2eeb5f760806361a997b8c7be0372c"
+  integrity sha512-1K934/lNC+wl4oRHYTogxTH8Qt19EBSXpiztItISkgNcmtDrIcbod3drPBWiexhzYqNKetRTgX0gLzFxWHhzPg==
   dependencies:
     "@octokit/rest" "19.0.3"
     cac "6.7.12"
