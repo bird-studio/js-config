@@ -1,4 +1,4 @@
-const { commitConfig } = require("./lib");
+const commitConfig = require("./lib/commit.config");
 
 module.exports = {
   branches: ["main"],

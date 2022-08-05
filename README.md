@@ -20,43 +20,13 @@ npm i -D @bird-studio/js-config
 ```
 
 ```js
-// babel.config.js;
+// release.config.js
 
-/** @type {import('@babel/core').TransformOptions} */
-module.exports = require("@bird-studio/js-config").babelConfig.nextJs;
+module.exports = require("@bird-studio/js-config").releaseConfig.github;
 ```
 
 ```js
-// jest.config.js
+// interactive-message.config.js
 
-/** @type {import('@jest/types/build/Config').InitialOptions} */
-module.exports = require("@bird-studio/js-config").jestConfig.nextJs;
-
-/** @type {import('@jest/types/build/Config').InitialOptions} */
-module.exports = require("@bird-studio/js-config").jestConfig.node;
-```
-
-```js
-// next.config.js
-
-/** @type {import('next').NextConfig} */
-module.exports = require("@bird-studio/js-config").nextConfig;
-```
-
-```json
-// tsconfig.json
-
-{
-  "extends": "@bird-studio/js-config/tsConfig/tsconfig.base.json",
-  "compilerOptions": {
-    "rootDir": "src",
-    "outDir": "lib",
-    "baseUrl": "src",
-    "paths": {
-      "~/*": ["./*"]
-    }
-
-    // ....
-  }
-}
+module.exports = require("@bird-studio/js-config").interactiveMessageConfig;
 ```

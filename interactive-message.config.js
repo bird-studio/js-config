@@ -1,4 +1,4 @@
-const { commitConfig } = require("./lib");
+const commitConfig = require("./lib/commit.config");
 
 const { plugin } = require("@bird-studio/interactive-message");
 
@@ -30,8 +30,17 @@ const fetchMyIssues = () =>
     .then((v) => [notSelected, ...v])
     .catch(() => [notSelected]);
 
+const typoDic = plugin.typo.makeDictionary({ langCode: "en_US" });
+const typoValidate = (p) => {
+  const r = plugin.typo.toAns(typoDic.suggest(p));
+  if (r === true) {
+    return r;
+  }
+  return `typo? ${r}`;
+};
+
 /**
- * @type {import('interactive-message').Setting}
+ * @type {import('@bird-studio/interactive-message').Setting}
  */
 module.exports = {
   template: `{{type}}: {{gitmoji}} {{subject}} Close #{{issue}}
@@ -60,6 +69,7 @@ module.exports = {
       name: "subject",
       type: "input",
       message: "Please input the subject.",
+      validate: typoValidate,
     },
     {
       name: "issue",
@@ -77,6 +87,7 @@ module.exports = {
       type: "input",
       message: "Please input the body.",
       overwriteTpl: (tpl) => tpl.replace(/\r?\n{2,}/, "\r\n\r\n").trim(),
+      validate: typoValidate,
     },
   ],
   config: {
