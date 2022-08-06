@@ -30,13 +30,45 @@ const fetchMyIssues = () =>
     .then((v) => [notSelected, ...v])
     .catch(() => [notSelected]);
 
-const typoDic = plugin.typo.makeDictionary({ langCode: "en_US" });
-const typoValidate = (p) => {
-  const r = plugin.typo.toAns(typoDic.suggest(p));
-  if (r === true) {
-    return r;
+const grammarApi = plugin.grammar.cretaGrammarApi({
+  key: process.env.GRAMMAR_API_KEY,
+  language: "en-US",
+});
+
+const errorInput = (txt) => {
+  if (!txt) {
+    return true;
   }
-  return `typo? ${r}`;
+
+  return plugin.grammar.checkGrammar({ grammarApi, txt: txt }).then((v) => {
+    if (v.isFailure) {
+      // 対応不能
+      return true;
+    }
+
+    if (!v.data.status) {
+      // 対応不能
+      return true;
+    }
+
+    if (!v.data.response.result) {
+      // 対応不能
+      return true;
+    }
+
+    if (v.data.response.errors.length === 0) {
+      // Good!!
+      return true;
+    }
+
+    const r = v.data.response.errors.map((e) => ({
+      description: e.description.en,
+      bad: e.bad,
+      better: e.better,
+    }));
+
+    return JSON.stringify(r, null, 2);
+  });
 };
 
 /**
@@ -69,7 +101,7 @@ module.exports = {
       name: "subject",
       type: "input",
       message: "Please input the subject.",
-      validate: typoValidate,
+      validate: errorInput,
     },
     {
       name: "issue",
@@ -87,7 +119,7 @@ module.exports = {
       type: "input",
       message: "Please input the body.",
       overwriteTpl: (tpl) => tpl.replace(/\r?\n{2,}/, "\r\n\r\n").trim(),
-      validate: typoValidate,
+      validate: errorInput,
     },
   ],
   config: {
