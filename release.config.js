@@ -8,7 +8,7 @@ module.exports = {
       {
         preset: "conventionalcommits",
         releaseRules: commitConfig.map((v) => ({
-          type: v.value,
+          type: v._value,
           release: v.release,
         })),
       },
@@ -19,7 +19,7 @@ module.exports = {
         preset: "conventionalcommits",
         presetConfig: {
           types: commitConfig.map((v) => ({
-            type: v.value,
+            type: v._value,
             section: v.value,
             hidden: false,
           })),
