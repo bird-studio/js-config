@@ -30,10 +30,10 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@bird-studio/interactive-message@4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@bird-studio/interactive-message/-/interactive-message-4.0.0.tgz#e474a1370aa2785b29b247819e0ebdfaa6e854ef"
-  integrity sha512-jNFmnk2PHONKNC+S02zyCCsIW4V3dVekuwaYkAYb1c76ZSZeeuC5QqlnmgJqM2rV4Cdl/DBwoQh2zkTGj7zCeg==
+"@bird-studio/interactive-message@4.1.1":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@bird-studio/interactive-message/-/interactive-message-4.1.1.tgz#cce889bf2c2c1fc3d0f6c2025b84946c7a433b7e"
+  integrity sha512-NnTvCKnp4HerxB4+5doTBsiIl3sqiK9/+WkrkVqIE2b9Gjv4pyoGueB+tMtqTFNa5gX1p8AF6jIKBiMhutqirw==
   dependencies:
     "@nut-tree/nut-js" "2.1.1"
     "@octokit/rest" "19.0.3"
