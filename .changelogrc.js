@@ -1,3 +1,6 @@
 module.exports = {
-  displayTypes: ["*"],
+  scopeDisplayName: {
+    "x.x.o": "abc",
+  },
+  //   displayTypes: ["*"],
 };
