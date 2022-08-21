@@ -11,5 +11,4 @@ jobs:
       - uses: "marcantondahmen/release-notes-action@master"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          prerelease: false
-          draft: false
+          strict: false
