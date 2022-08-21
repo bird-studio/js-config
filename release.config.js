@@ -14,7 +14,7 @@ module.exports = {
           },
           {
             scope: "x.x.o",
-            release: false,
+            release: "patch",
           },
         ],
       },
