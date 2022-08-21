@@ -44,19 +44,19 @@ module.exports = {
     //     })),
     //   },
     // ],
-    [
-      "@semantic-release/release-notes-generator",
-      // {
-      //   preset: "conventionalcommits",
-      //   presetConfig: {
-      //     types: x.map((v) => ({
-      //       type: v.scope,
-      //       section: v.scope,
-      //       hidden: false,
-      //     })),
-      //   },
-      // },
-    ],
+    // [
+    //   "@semantic-release/release-notes-generator",
+    //   // {
+    //   //   preset: "conventionalcommits",
+    //   //   presetConfig: {
+    //   //     types: x.map((v) => ({
+    //   //       type: v.scope,
+    //   //       section: v.scope,
+    //   //       hidden: false,
+    //   //     })),
+    //   //   },
+    //   // },
+    // ],
     "@semantic-release/github",
     "@semantic-release/npm",
     "@semantic-release/git",
