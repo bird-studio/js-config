@@ -7,7 +7,7 @@ module.exports = {
       "@semantic-release/commit-analyzer",
       {
         config: "conventional-changelog-gitmoji-config",
-        releaseRules: [{ type: "foo", release: "patch" }],
+        releaseRules: [{ scope: "xxx", release: "patch" }],
       },
     ],
     // [
