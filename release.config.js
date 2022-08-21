@@ -20,7 +20,7 @@ module.exports = {
         presetConfig: {
           types: commitConfig.map((v) => ({
             type: v.value,
-            section: v.value,
+            section: Array.from(v.value).join("."),
             hidden: false,
           })),
         },
