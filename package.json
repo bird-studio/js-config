@@ -28,7 +28,6 @@
     "prepare": "git config --local core.hooksPath .githooks"
   },
   "dependencies": {
-    "conventional-changelog-gitmoji-config": "1.4.3",
     "cosmiconfig": "7.0.1"
   },
   "devDependencies": {
