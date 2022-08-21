@@ -1,15 +1,17 @@
+name: Release
 on:
   push:
     tags:
-      - "*"
-
+      - *
 jobs:
   release-notes:
-    name: "Regex Filtered Release Notes"
-    runs-on: "ubuntu-latest"
+    runs-on: ubuntu-latest
     steps:
-      - uses: "marcantondahmen/release-notes-action@master"
+      - name: Checkout
+        uses: actions/checkout@v2
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          strict: false
-# a
+          fetch-depth: 0
+      - name: Release Notary Action
+        uses: docker://aevea/release-notary:0.9.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
