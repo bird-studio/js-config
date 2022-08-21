@@ -6,13 +6,20 @@ module.exports = {
     [
       "@semantic-release/commit-analyzer",
       {
-        preset: "conventionalcommits",
-        releaseRules: commitConfig.map((v) => ({
-          type: v.value,
-          release: v.release,
-        })),
+        config: "conventional-changelog-gitmoji-config",
+        releaseRules: [{ type: "foo", release: "patch" }],
       },
     ],
+    // [
+    //   "@semantic-release/commit-analyzer",
+    //   {
+    //     preset: "conventionalcommits",
+    //     releaseRules: commitConfig.map((v) => ({
+    //       type: v.value,
+    //       release: v.release,
+    //     })),
+    //   },
+    // ],
     [
       "@semantic-release/release-notes-generator",
       {
