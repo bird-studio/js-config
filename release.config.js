@@ -1,4 +1,15 @@
-const commitConfig = require("./lib/commit.config");
+// const commitConfig = require("./lib/commit.config");
+
+const x = [
+  {
+    scope: "x.x.x",
+    release: false,
+  },
+  {
+    scope: "x.x.o",
+    release: "patch",
+  },
+];
 
 module.exports = {
   branches: ["main"],
@@ -7,16 +18,20 @@ module.exports = {
       "@semantic-release/commit-analyzer",
       {
         config: "conventional-changelog-gitmoji-config",
-        releaseRules: [
-          {
-            scope: "x.x.x",
-            release: false,
-          },
-          {
-            scope: "x.x.o",
-            release: "patch",
-          },
-        ],
+        releaseRules: x,
+      },
+    ],
+    [
+      "@semantic-release/release-notes-generator",
+      {
+        config: "conventional-changelog-gitmoji-config",
+        presetConfig: {
+          types: x.map((v) => ({
+            type: v.scope,
+            section: v.scope,
+            hidden: false,
+          })),
+        },
       },
     ],
     // [
@@ -29,19 +44,20 @@ module.exports = {
     //     })),
     //   },
     // ],
-    [
-      "@semantic-release/release-notes-generator",
-      {
-        preset: "conventionalcommits",
-        presetConfig: {
-          types: commitConfig.map((v) => ({
-            type: v.value,
-            section: v.value,
-            hidden: false,
-          })),
-        },
-      },
-    ],
+    // [
+    //   "@semantic-release/release-notes-generator",
+    //   {
+    //     preset: "conventionalcommits",
+    //     presetConfig: {
+    //       types: commitConfig.map((v) => ({
+    //         type: v.value,
+    //         section: v.value,
+    //         hidden: false,
+    //       })),
+    //     },
+    //   },
+    // ],
+
     "@semantic-release/github",
     "@semantic-release/npm",
     "@semantic-release/git",
