@@ -9,6 +9,10 @@ const x = [
     scope: "x.x.o",
     release: "patch",
   },
+  {
+    scope: "x.o.x",
+    release: "minor",
+  },
 ];
 
 module.exports = {
