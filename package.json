@@ -31,7 +31,7 @@
     "cosmiconfig": "7.0.1"
   },
   "devDependencies": {
-    "@bird-studio/interactive-message": "5.0.7",
+    "@bird-studio/interactive-message": "5.0.9",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/npm": "9.0.1",
     "conventional-changelog-conventionalcommits": "5.0.0",
