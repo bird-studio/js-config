@@ -28,7 +28,7 @@
     "prepare": "git config --local core.hooksPath .githooks"
   },
   "dependencies": {
-    "cosmiconfig": "7.0.1"
+    "cosmiconfig": "7.1.0"
   },
   "devDependencies": {
     "@bird-studio/interactive-message": "5.0.10",
